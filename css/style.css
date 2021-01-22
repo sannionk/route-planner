@@ -1,0 +1,94 @@
+html, body {
+    max-width: 1160px;
+    margin: auto;
+    scroll-behavior: smooth;
+    background-color: #ffffff;
+}
+body {
+    transition:min-height 0.3s ease-in-out;
+}
+.header {
+    font-family: sans-serif;
+    font-variant-caps: all-petite-caps;
+    text-align: center;
+    padding: 20px;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.content {
+    display: grid;
+    grid-template-columns: 210px auto;
+}
+#countries {
+    display: grid;
+    background-color: #ffffff;
+}
+.tier-cards {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin-bottom: 40px;
+}
+.tier-header {
+    background-color: #2893ff;
+    color: white;
+    font-family: 'Barlow Condensed', sans-serif;
+    padding: 10px;
+}
+.info-card {
+    background-color: rgb(255, 255, 255);
+    width: 160px;
+    margin: 10px;
+    box-shadow: 5px 10px 18px #888888;
+    border-bottom-left-radius: 30px;
+    font-family: sans-serif;
+    font-variant-caps: all-petite-caps;
+}
+.selected {
+    background-color: rgba(187, 214, 132, 0.616);
+    width: 152px;
+    margin: 10px;
+    margin-left: 14px;
+    margin-right: 14px;
+    box-shadow: 2px 3px 16px #888888;
+    border-bottom-left-radius: 30px;
+    font-family: sans-serif;
+    font-variant-caps: all-petite-caps;
+}
+.flag {
+    height: 100px;
+}
+img {
+    box-shadow: 4px 4px 18px #aaaaaa;
+    max-height: 90px;
+}
+.native {
+    text-align: right;
+}
+.info-text {
+    padding: 15px;
+}
+.info-text p {
+    line-height: 16px;
+}
+.side {
+    background-color: #e9ecef;
+    padding: 15px;
+}
+#itinerary {
+    padding-top: 30px;
+}
+.footer {
+    background-color: #3298ff;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    position: sticky;
+}
+.btn-light {
+    margin: 3px;
+}
+#name, #btn {
+    transition:opacity 0.3s ease-in-out;
+}

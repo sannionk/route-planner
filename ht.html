@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Route Planner</title>
+</head>
+<body id="page">
+    <div class="header border">
+        <h1 class="display-1">Route Planner</h1>
+    </div>
+    <div class="content">
+        <div class="side border">
+            <div class="form-group form" id="hide">
+                <label for="name">Welcome to route planner! Start by giving your name below:</label>
+                <input type="text" name="name" id="name" placeholder="Name">
+            </div>
+            <button class="btn btn-primary" id="btn" disabled>Start</button>
+            <div id="itinerary" class="sticky-top">
+                <ol id="list"></ol>
+            </div>
+        </div>
+        <div id="countries" class="border"></div>
+        
+    </div>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle"></h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body">
+                <p>Your final itinerary is:</p>
+                <ol id="modal-list"></ol>
+                <p>Currencies you will need: </p>
+                <ul id="modal-curr"></ul>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div><button class='btn btn-light' id='start-over' disabled>Start over</button></div>
+        <div><button class='btn btn-light' id='to-the-top' disabled>To the top</button></div>
+        <div><button class='btn btn-light' type="button" data-toggle="modal" data-target="#exampleModalCenter" id="fin" disabled>Finish</button></div>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="js/underscore.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
